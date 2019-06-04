@@ -93,7 +93,6 @@ String getURL(String method) //Method encodes url to be suitable for querying th
     from = from.replaceAll(" ", ""); //strip all spaces
 
    String baseQuery = "https://maps.googleapis.com/maps/api/directions/json?origin="+  from + "&destination=" + to + "&mode=" + method + "&key=" + myAPIKEY; //Replace API key here.
-    //  String baseQuery = "https://maps.googleapis.com/maps/api/directions/json?origin="+  from + "&destination=" + to + "&mode=" + method + "&key=AIzaSyAjtgXdu5VL7zB4xIKKGVK9a9cmWwBb4Q0"; //Replace API key here.
    encodedQuery = baseQuery.replace(" ", "+"); //add a plus between spaces to allow multiple words when searching.
     return encodedQuery;
 }
