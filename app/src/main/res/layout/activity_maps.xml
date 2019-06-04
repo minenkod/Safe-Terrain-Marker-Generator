@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/txtTo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="To:" />
+
+    <EditText
+        android:id="@+id/etTo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="22.746542,75.868976" />
+
+
+    <TextView
+        android:id="@+id/txtFrom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="From:" />
+
+    <EditText
+        android:id="@+id/etFrom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="22.753062,75.864534" />
+    <TextView
+        android:id="@+id/txtFreq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Distance Frequency (m):" />
+    <EditText
+        android:id="@+id/etFreq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="50" />
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:text="Generate Paths"
+        android:textColor="@color/White"
+        />
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:map="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/map"
+android:name="com.google.android.gms.maps.SupportMapFragment"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MapsActivity" />
+
+</LinearLayout>
